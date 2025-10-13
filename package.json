@@ -1,0 +1,19 @@
+{
+  "name": "renovate-issue-repro",
+  "private": true,
+  "dependencies": {
+  },
+  "devDependencies": {
+  },
+  "engines": {
+    "npm": "11.4.2"
+  },
+  "overrides": {
+  },
+  "scripts": {
+  },
+  "workspaces": [
+    "services/service1",
+    "services/service2"
+  ]
+}

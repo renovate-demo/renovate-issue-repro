@@ -1,0 +1,31 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended",
+    "group:definitelyTyped",
+    "group:linters",
+    "group:jsUnitTestNonMajor",
+    "group:codemirror",
+    "group:react"
+  ],
+  "enabledManagers": [
+    "gomod",
+    "maven",
+    "npm",
+    "bundler",
+    "pep621",
+    "pip_requirements",
+    "ruby-version"
+  ],
+  "branchPrefix": "renovate-",
+  "addLabels": ["dependencies", "type:maintenance"],
+  "dependencyDashboardApproval": true,
+  "npmrc": "dry-run=false\naudit=false\nupdate-notifier=false",
+  "vulnerabilityAlerts": {
+    "addLabels": ["dependencies", "type:maintenance"],
+    "dependencyDashboardApproval": false
+  },
+  "rangeStrategy": "auto",
+  "rebaseWhen": "conflicted",
+  "schedule": []
+}
